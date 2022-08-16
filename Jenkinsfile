@@ -1,10 +1,10 @@
 pipeline {
-    agent { label 'agent1' }
+    agent { label 'agent2' }
     tools {
         maven 'maven'
     }
     environment {
-        registry = "rupi07/devops"
+        registry = "robelepe/nagp-devops-2022"
         registryCredential = 'docker-hub-credential'
         dockerImage = ''
     }
