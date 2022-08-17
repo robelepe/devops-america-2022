@@ -24,7 +24,7 @@ pipeline {
                 sh 'mvn clean package'
             }
         }
-        stage('Sonar') {
+        stage('Code Analysis') {
             steps {
                 sh 'mvn sonar:sonar'
             }
